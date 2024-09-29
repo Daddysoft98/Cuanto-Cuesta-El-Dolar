@@ -1,0 +1,59 @@
+/* Estilos generales del formulario */
+form {
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin: 20px auto; /* Centrar el formulario en la página */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+  background-color: #ffffff; /* Color de fondo del formulario */
+}
+
+/* Título del formulario */
+form h2 {
+  text-align: center; /* Centrar el título */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="number"] {
+  width: 100%; /* Ocupa todo el ancho */
+  padding: 10px; /* Espaciado interno */
+  margin: 10px 0; /* Margen entre campos */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo para el botón de envío */
+button {
+  width: 100%; /* Botón ocupa todo el ancho */
+  padding: 10px; /* Espaciado interno */
+  margin-top: 10px; /* Margen superior */
+  background-color: #28a745; /* Color de fondo verde */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  transition: background-color 0.3s; /* Transición para color de fondo */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover {
+  background-color: #218838; /* Color de fondo más oscuro */
+}
+
+/* Mensaje de error */
+.error-message {
+  color: red; /* Color del texto de error */
+  margin-top: -8px; /* Margen negativo para ajustar */
+  margin-bottom: 10px; /* Espaciado inferior */
+  font-size: 14px; /* Tamaño de fuente */
+}
+
+/* Espaciado entre los campos y el botón */
+input[type="text"],
+input[type="number"] {
+  margin-bottom: 15px; /* Espacio inferior */
+}

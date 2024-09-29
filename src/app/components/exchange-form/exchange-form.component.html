@@ -1,0 +1,40 @@
+<form [formGroup]="exchangeForm" (ngSubmit)="onSubmit()">
+  <h2>Formulario de Tipo de Cambio</h2>
+
+  <input type="text" formControlName="companyName" placeholder="Nombre de la Empresa" required>
+  <div *ngIf="exchangeForm.get('companyName')?.invalid && exchangeForm.get('companyName')?.touched" class="error-message">
+    El nombre de la empresa es requerido.
+  </div>
+
+  <input type="number" formControlName="dollarBuy" placeholder="Compra Dólar" required>
+  <div *ngIf="exchangeForm.get('dollarBuy')?.invalid && exchangeForm.get('dollarBuy')?.touched" class="error-message">
+    El precio de compra del dólar es requerido.
+  </div>
+
+  <input type="number" formControlName="dollarSell" placeholder="Venta Dólar" required>
+  <div *ngIf="exchangeForm.get('dollarSell')?.invalid && exchangeForm.get('dollarSell')?.touched" class="error-message">
+    El precio de venta del dólar es requerido.
+  </div>
+
+  <input type="number" formControlName="euroBuy" placeholder="Compra Euro" required>
+  <div *ngIf="exchangeForm.get('euroBuy')?.invalid && exchangeForm.get('euroBuy')?.touched" class="error-message">
+    El precio de compra del euro es requerido.
+  </div>
+
+  <input type="number" formControlName="euroSell" placeholder="Venta Euro" required>
+  <div *ngIf="exchangeForm.get('euroSell')?.invalid && exchangeForm.get('euroSell')?.touched" class="error-message">
+    El precio de venta del euro es requerido.
+  </div>
+
+  <input type="number" formControlName="poundBuy" placeholder="Compra Libra" required>
+  <div *ngIf="exchangeForm.get('poundBuy')?.invalid && exchangeForm.get('poundBuy')?.touched" class="error-message">
+    El precio de compra de la libra es requerido.
+  </div>
+
+  <input type="number" formControlName="poundSell" placeholder="Venta Libra" required>
+  <div *ngIf="exchangeForm.get('poundSell')?.invalid && exchangeForm.get('poundSell')?.touched" class="error-message">
+    El precio de venta de la libra es requerido.
+  </div>
+
+  <button type="submit">Enviar Tipo de Cambio</button>
+</form>

@@ -1,0 +1,84 @@
+header {
+    background-color: #003366; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px 0; /* Espaciado superior e inferior */
+  }
+  
+  .container {
+    display: flex; /* Usamos flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre logo, nav y búsqueda */
+    align-items: center; /* Alineamos verticalmente al centro */
+    max-width: 1500px; /* Ancho máximo */
+    margin: 0 auto; /* Centramos el contenedor */
+    padding: 0 20px; /* Espaciado lateral */
+  }
+  
+  .logo h1 {
+    margin: 0; /* Eliminamos márgenes */
+    font-size: 28px; /* Tamaño de la fuente */
+  }
+  
+  nav ul {
+    list-style-type: none; /* Eliminamos los puntos de la lista */
+    margin: 0; /* Eliminamos márgenes */
+    padding: 0; /* Eliminamos padding */
+    display: flex; /* Usamos flexbox para la navegación */
+  }
+  
+  nav ul li {
+    margin-left: 20px; /* Espaciado entre los elementos de la lista */
+  }
+  
+  nav ul li a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Eliminamos el subrayado */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: color 0.3s; /* Transición para el cambio de color */
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00; /* Color al pasar el mouse */
+  }
+  
+  .search {
+    display: flex; /* Usamos flexbox para el campo de búsqueda */
+  }
+  
+  .search input {
+    padding: 8px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  .search button {
+    padding: 8px 12px; /* Espaciado interno */
+    margin-left: 8px; /* Espacio entre el campo y el botón */
+    background-color: #ffcc00; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición para el fondo */
+  }
+  
+  .search button:hover {
+    background-color: #ffd700; /* Color al pasar el mouse */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Colocamos los elementos en columna */
+      align-items: flex-start; /* Alineamos a la izquierda */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Colocamos la navegación en columna */
+      margin-top: 10px; /* Margen superior */
+    }
+  
+    nav ul li {
+      margin-left: 0; /* Sin margen a la izquierda */
+      margin-bottom: 10px; /* Espacio entre elementos */
+    }
+  }
+  

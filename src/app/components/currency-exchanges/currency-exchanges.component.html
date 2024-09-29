@@ -1,0 +1,35 @@
+<div class="container">
+    <h2>Casas de Cambio Online</h2>
+
+    <div class="form-group">
+        <label for="name">Nombre de la Casa de Cambio:</label>
+        <input type="text" id="name" [(ngModel)]="newExchange.name" name="name" required />
+    </div>
+
+    <div class="form-group">
+        <label for="website">Sitio Web:</label>
+        <input type="url" id="website" [(ngModel)]="newExchange.website" name="website" required />
+    </div>
+
+    <div class="form-group">
+        <label for="contact">Contacto:</label>
+        <input type="text" id="contact" [(ngModel)]="newExchange.contact" name="contact" required />
+    </div>
+
+    <button (click)="addExchange()">Agregar Casa de Cambio</button>
+
+    <div *ngIf="exchanges.length > 0" class="exchange-list">
+        <h3>Casas de Cambio Registradas:</h3>
+        <div *ngFor="let exchange of exchanges" class="exchange-item">
+            <span>
+                <strong>{{ exchange.name }}</strong><br />
+                <a href="{{ exchange.website }}" target="_blank">{{ exchange.website }}</a><br />
+                <small>{{ exchange.contact }}</small>
+            </span>
+        </div>
+    </div>
+
+    <div *ngIf="newExchange.name && !newExchange.website" class="error-message">
+        Por favor, ingresa un sitio web válido.
+    </div>
+</div>
