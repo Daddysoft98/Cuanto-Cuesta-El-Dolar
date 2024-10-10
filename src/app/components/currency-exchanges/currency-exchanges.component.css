@@ -1,29 +1,29 @@
 .container {
-    max-width: 600px; /* Ancho máximo del contenedor */
-    margin: 30px auto; /* Centrar el contenedor */
-    padding: 20px; /* Espaciado interno */
-    background-color: #ffffff; /* Fondo blanco */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px; 
+    margin: 30px auto;
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
 }
 
 h2 {
-    text-align: center; /* Centrar el texto */
-    color: #333; /* Color oscuro */
-    margin-bottom: 15px; /* Espaciado inferior */
-    font-family: 'Arial', sans-serif; /* Fuente moderna */
-    font-weight: 600; /* Negrita ligera */
+    text-align: center; 
+    color: #333; 
+    margin-bottom: 15px; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: 600; 
 }
 
 .form-group {
-    margin-bottom: 20px; /* Espaciado inferior de los grupos de formulario */
+    margin-bottom: 20px; 
 }
 
 label {
-    display: block; /* Mostrar como bloque */
-    margin-bottom: 5px; /* Espaciado inferior */
-    font-size: 14px; /* Tamaño de fuente */
-    color: #555; /* Color gris */
+    display: block; 
+    margin-bottom: 5px; 
+    font-size: 14px; 
+    color: #555; 
 }
 
 input {
@@ -85,8 +85,8 @@ button:hover {
 }
 
 .error-message {
-    color: #d9534f; /* Color del mensaje de error */
-    margin-top: 10px; /* Espaciado superior */
-    font-size: 14px; /* Tamaño de fuente */
-    text-align: center; /* Centrar texto */
+    color: #d9534f;
+    margin-top: 10px; 
+    font-size: 14px; 
+    text-align: center; 
 }
